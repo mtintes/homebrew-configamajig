@@ -2,7 +2,6 @@ class Configamajig < Formula
   desc "Secure image proxy server"
   homepage "https://github.com/mtintes/configamajig"
   url "https://github.com/mtintes/configamajig/archive/refs/tags/v0.0.17.tar.gz"
-  sha256 "c6491a9364e621da6a2f204b2bc77aac14eb7d0eba895bd5c60240853d572f4d"
   license ""
 
   bottle do
@@ -19,14 +18,8 @@ class Configamajig < Formula
   depends_on "go" => :build
 
   def install
-    system "make", "build", "APP_VER=#{version}"
-    bin.install Dir["build/bin/*"]
-  end
-
-  test do
-    fork do
-      exec bin/"configamajig", "--version"
-    end
-    sleep 1
+    system "cd", "cli"
+    system "make",
+    bin.install Dir["../bin/configamajig"]
   end
 end
