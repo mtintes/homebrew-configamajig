@@ -5,20 +5,20 @@
 class Configamajig < Formula
   desc ""
   homepage "https://github.com/mtintes/homebrew-configamajig"
-  version "0.0.21"
+  version "0.0.22"
 
   on_macos do
     on_intel do
-      url "https://github.com/mtintes/configamajig/releases/download/v0.0.21/configamajig_Darwin_x86_64.tar.gz"
-      sha256 "b528c68e8038789ea1a8c52c9cfd20cceded2f5c0b99525df507f01562fc684e"
+      url "https://github.com/mtintes/configamajig/releases/download/v0.0.22/configamajig_Darwin_x86_64.tar.gz"
+      sha256 "3351041990d2d8360a78077b318f42042ff97bbef270c814c5c2d523d2a848d4"
 
       def install
         bin.install "configamajig"
       end
     end
     on_arm do
-      url "https://github.com/mtintes/configamajig/releases/download/v0.0.21/configamajig_Darwin_arm64.tar.gz"
-      sha256 "279d8363cdf71cf8dfe3e37dd6f65edf2e1f55c2f4dacd5836f704a22035984d"
+      url "https://github.com/mtintes/configamajig/releases/download/v0.0.22/configamajig_Darwin_arm64.tar.gz"
+      sha256 "19e56d52419bed0eb2a0563f60bc663e40f7794c9aebc79bfb8a42f092380808"
 
       def install
         bin.install "configamajig"
@@ -29,8 +29,8 @@ class Configamajig < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mtintes/configamajig/releases/download/v0.0.21/configamajig_Linux_x86_64.tar.gz"
-        sha256 "5abff7d3153134596ae516db22e73ec5615cf1d3fd0879f65e1a53cbe9a6b72b"
+        url "https://github.com/mtintes/configamajig/releases/download/v0.0.22/configamajig_Linux_x86_64.tar.gz"
+        sha256 "45cf1900749f62b0b4943ad92952cd09e524c90f01f4b5ca32f45202c1fa16ce"
 
         def install
           bin.install "configamajig"
@@ -39,8 +39,8 @@ class Configamajig < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mtintes/configamajig/releases/download/v0.0.21/configamajig_Linux_arm64.tar.gz"
-        sha256 "be2057d4f8f9e32f6c6835a1e5323bedf8bace4995502daf18c05c03f8dd9522"
+        url "https://github.com/mtintes/configamajig/releases/download/v0.0.22/configamajig_Linux_arm64.tar.gz"
+        sha256 "144626cc2018d41ba7c6753614b33bf20191833ac381edfd34b38476ee3167d6"
 
         def install
           bin.install "configamajig"
